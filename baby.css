@@ -291,4 +291,12 @@ body {
         transform: rotateX(0deg);
         z-index: 500;
     }
+
+    .top.open {
+        transform-origin: top;
+        transform: rotateX(180deg);
+        transition: transform .7s, border .7s, z-index .7s ease-in-out;
+        border-top: 150px solid #e3a7b7;
+        z-index: 200; /* Ensure this matches the intended z-index after animation */
+    }
 }
