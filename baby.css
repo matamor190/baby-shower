@@ -1,10 +1,8 @@
-/* STRART HEREEE */
-
 body {
     background-image: url('flowers.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 
@@ -239,5 +237,58 @@ body {
         transform: translatey(0px);
         z-index: 350;
         transition: 1s ease-in-out;
+    }
+}
+
+/* Mobile Media Queries */
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 100%; 
+    }
+    
+    .frame {
+        width: 90%; 
+        margin-top: 100px; 
+    }
+    
+    #button_open_envelope {
+        width: 80%; 
+        left: 10%; 
+    }
+    
+    .message {
+        width: 90%; 
+    }
+    
+    .text {
+        font-size: 16px; 
+    }
+    
+    .left,
+    .right,
+    .bottom {
+        width: 100%;
+    }
+    
+    .left {
+        border-left: 250px solid #f5b0b8;
+        border-top: 250px solid transparent;
+        border-bottom: 250px solid transparent;
+    }
+    .right {
+        border-right: 250px solid #f5b0b8;
+        border-top: 250px solid transparent;
+        border-bottom: 250px solid transparent;
+        left: -250px;
+    }
+
+    .top {
+        border-right: 44vw solid transparent;
+        border-top: 36vh solid #f4c0c8;
+        border-left: 43vw solid transparent;
+        transition: transform 1s, border 1s, ease-in-out;
+        transform-origin: top;
+        transform: rotateX(0deg);
+        z-index: 500;
     }
 }
