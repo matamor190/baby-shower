@@ -296,7 +296,7 @@ html {
 
     .top {
         border-right: 44vw solid transparent;
-        border-top: 28vh solid #f4c0c8;
+        border-top: 30vh solid #f4c0c8;
         border-left: 43vw solid transparent;
         transition: transform 1s, border 1s, ease-in-out;
         transform-origin: top;
